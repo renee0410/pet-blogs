@@ -1,13 +1,22 @@
 .header {
-  margin: 30px 0 30px 0;
+  padding: 30px 0 30px 0;
+  display: flex;
 
-  .navigation {
+  .header-l {
+    padding-right: 36px;
     display: flex;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
 
     a {
       padding: 8px 0 8px 48px;
       font-weight: bold;
       display: inline-block;
+      vertical-align: middle;
     }
   }
 }
