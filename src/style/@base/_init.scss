@@ -1,0 +1,15 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-size: $fontSizeDefault;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+// layout
+.container {
+  padding: 0 130px 0 130px;
+}
