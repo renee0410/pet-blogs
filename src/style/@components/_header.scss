@@ -1,22 +1,61 @@
-.header {
-  padding: 30px 0 30px 0;
-  display: flex;
+header {
+  position: fixed;
+  z-index: 1000;
 
-  .header-l {
-    padding-right: 36px;
+  .headerArea {
+    padding: 30px 0 30px 0;
     display: flex;
-  }
+  
+    .header-l {
+      padding-right: 36px;
+      display: flex;
 
-  nav {
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: center;
+      nav {
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+    
+        a {
+          padding: 8px 0 8px 48px;
+          font-weight: bold;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .header-r {
+      display: flex;
 
-    a {
-      padding: 8px 0 8px 48px;
-      font-weight: bold;
-      display: inline-block;
-      vertical-align: middle;
+      .searchArea {
+        padding-right: 14px;
+      }
+
+      // btn
+      .btn-lg {
+        padding-right: 14px;
+
+        button {
+          padding: 12px 28px 12px 28px;
+          border-radius: 57px;
+          border: 0;
+          background-color: $primary;
+          color: $neutral-00;
+        }
+      }
+
+      // 語言下拉選單
+      .languageSelection {
+        display: flex;
+        align-items: center;
+
+        .countyIcon {
+          padding-right: 8px;
+        }
+
+        .arrowIcon {
+          padding-left: 4px;
+        }
+      }
     }
   }
 }

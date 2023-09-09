@@ -1,13 +1,16 @@
 import './style/all.scss';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header } from './components/Header';
+import { Layout } from './pages/Layout';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='' element={<Header></Header>}></Route>
+        <Route path='' element={<Layout></Layout>}>
+          <Route path='/' element={<HomePage></HomePage>}></Route>
+        </Route>
       </Routes>
     </div>
   );
