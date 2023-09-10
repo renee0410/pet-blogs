@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { Button } from './Button';
 // icon
@@ -7,8 +7,19 @@ import Country from '../assets/img/icon/Frame 45.svg';
 import ArrowDown from '../assets/img/icon/Caret_Down_SM.svg';
 
 export function Header() {
+  // 是否滾動
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  // 滾動監聽
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(window.scrollY > 0);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
   return (
-    <header>
+    <header className={ isScrolling ? 'scrollBgc' : '' }>
       <div className="container">
         <div className="headerArea">
           <div className="header-l">
