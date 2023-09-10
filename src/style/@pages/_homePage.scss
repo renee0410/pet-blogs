@@ -3,5 +3,23 @@
   .hero {
     padding-top: 104px;
     background-color: $bgc;
+
+    h1,h2{
+      font-weight: bold;
+      color: $primary;
+    }
+    h1 {
+      padding-top: 48px;
+      line-height: 68px;
+    }
+    h2 {
+      padding-top: 4px;
+      line-height: 60px;
+    }
+    p {
+      line-height: 24px;
+      display: inline-block;
+      padding-top: 24px;
+    }
   }
 }

@@ -13,3 +13,11 @@
 .container {
   padding: 0 130px 0 130px;
 }
+
+// 文字大小
+h1 {
+  font-size: $fontSizeDefault + $fontSpace * 28;  // 60px
+}
+h2 {
+  font-size: $fontSizeDefault + $fontSpace * 19;  // 46px
+}
