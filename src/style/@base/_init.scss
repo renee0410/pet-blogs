@@ -14,6 +14,12 @@
   padding: 0 130px 0 130px;
 }
 
+// btn 
+button {
+  padding: 12px 28px 12px 28px;
+  border-radius: 57px;
+}
+
 // 文字大小
 h1 {
   font-size: $fontSizeDefault + $fontSpace * 28;  // 60px

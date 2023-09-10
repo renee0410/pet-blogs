@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { SearchBar } from './SearchBar';
+import { Button } from './Button';
 // icon
 import Logo from '../assets/img/Logo.svg';
 import Country from '../assets/img/icon/Frame 45.svg';
@@ -27,8 +28,11 @@ export function Header() {
                 <SearchBar></SearchBar>
               </div>
               {/* btn */}
-              <div className="btn-lg">
-                <button>Join the community</button>
+              <div className="btnArea">
+                <Button
+                  text='Join the community'
+                  style='btnPrimary'
+                ></Button>
               </div>
               {/* 語言下拉選單 */}
               <div className="languageSelection">
