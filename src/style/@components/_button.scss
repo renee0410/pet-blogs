@@ -1,9 +1,8 @@
 .btnPrimary {
-  border: 0;
   background-color: $primary;
   color: $neutral-00;
 }
 .btnSecondary {
-  border: 1px solid $primary;
   background-color: transparent;
+  color: $primary;
 }
