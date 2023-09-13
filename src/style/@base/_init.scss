@@ -32,3 +32,6 @@ h2 {
 h5 {
   font-size: $fontSizeDefault + $fontSpace * 5; //24px
 }
+span {
+  font-size: $fontSizeDefault - $fontSpace; //14px
+}
