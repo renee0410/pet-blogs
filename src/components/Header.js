@@ -18,10 +18,10 @@ export function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [])
-  
+
   return (
     <header className={ isScrolling ? 'scrollBgc' : '' }>
-      <div className="container">
+      <div className="container-lg container-md">
         <div className="headerArea">
           <div className="header-l">
                 {/* logo */}

@@ -17,10 +17,6 @@ import Rectangle7 from '../assets/img/background/rectangle/Rectangle 7.svg';
 import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
 import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
 
-import img1 from '../assets/img/whatsNew/image1.svg';
-
-
-
 export function HomePage() {
   // useEffect(() => {
   //   console.log(WhatsNewData)
@@ -59,7 +55,7 @@ export function HomePage() {
           <div className="img9">
             <img src={Rectangle9} alt="" />
           </div>
-          <div className="container">
+          <div className="container-lg">
             <h1>One more friend</h1>
             <h2>Thousands more fun!</h2>
             <p>Having a pet means you have more joy, a new friend, a happy<br/>person who will always be with you to have fun. We have 200+<br/>different pets that can meet your needs!</p>
@@ -79,7 +75,7 @@ export function HomePage() {
         </div>
         {/* whats new */}
         <div className="whatsNew">
-          <div className="container">
+          <div className="container-lg container-md">
             <div className="whatsNewTop"> 
               {/* 標題 */}
               <div className="title">
@@ -97,117 +93,32 @@ export function HomePage() {
             </div>
             {/* product cards */}
             <div className="productCardsArea">
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
-              </div>
-              <div className="productCard">
-                <div className="imgBoxFit">
-                  <img src={img1} alt="" />
-                </div>
-                <div className="cardBody">
-                  <p className="cardTitle">MO231 - Pomeranian White</p>
-                  <div className="cardInfo">
-                    <span className="aboutGene">Gene: Male</span>
-                    <span>•</span>
-                    <span className="aboutAge">Age: 02 month</span>
-                  </div>
-                  <span className="cardPrice">6.900.000 VND</span>
-                </div>
+              <div className="row">
+                {
+                  WhatsNewData.data.map((item) => {
+                    console.log(item)
+                    return (
+                      <>
+                        <div className="col-lg-3 col-md-4">
+                          <div className="productCard">
+                            <div className="imgBoxFit">
+                              <img src={item.imgUrl} alt="" />
+                            </div>
+                            <div className="cardBody">
+                              <p className="cardTitle">{item.title}</p>
+                              <div className="cardInfo">
+                                <span className="aboutGene">Gene: {item.gene}</span>
+                                <span>•</span>
+                                <span className="aboutAge">Age: {item.age} month</span>
+                              </div>
+                              <span className="cardPrice">{item.price} VND</span>
+                            </div>
+                          </div>
+                        </div>
+                      </>
+                    )
+                  })
+                }
               </div>
             </div>
           </div>

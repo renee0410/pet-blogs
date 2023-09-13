@@ -126,31 +126,23 @@
     //  product cards
     .productCardsArea {
       padding-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 28px;
 
       .productCard {
         width: 100%;
-        height: 100%;
         border-radius: 12px;
-        box-shadow: 0 4px 28px rgba(0, 0, 0, .16);;
+        box-shadow: 0 4px 28px rgba(0, 0, 0, .16);
+        margin-bottom: 20px;
 
         .imgBoxFit {
-          // margin: auto;
-          width: 264px;
-          height: 264px;
-          border-radius: 10px;
-          overflow: hidden;
+          margin: auto;
+          padding: 8px;
 
           img {
             width: 100%;
             height: 100%;
             display: block;
             object-fit: cover;
-            margin: 8px;
-            border-top-left-radius: 10px; // 因為加了margin-top: 8px;後border-radius會被吃掉，所以直接在圖片上加上圓角
-            border-top-right-radius: 10px;
+            border-radius: 10px;
           }
         }
 
