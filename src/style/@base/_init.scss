@@ -81,11 +81,18 @@ h1 {
   font-size: $fontSizeDefault + $fontSpace * 28;  // 60px
 }
 h2 {
+  font-size: $fontSizeDefault + $fontSpace * 23;  // 52px
+}
+h3 {
   font-size: $fontSizeDefault + $fontSpace * 19;  // 46px
+}
+h4 {
+  font-size: $fontSizeDefault + $fontSpace * 13;  // 36px
 }
 h5 {
   font-size: $fontSizeDefault + $fontSpace * 5; //24px
 }
+// p 16px
 span {
   font-size: $fontSizeDefault - $fontSpace; //14px
 }

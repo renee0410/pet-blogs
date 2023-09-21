@@ -16,6 +16,7 @@ import Rectangle6 from '../assets/img/background/rectangle/Rectangle 6.svg';
 import Rectangle7 from '../assets/img/background/rectangle/Rectangle 7.svg';
 import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
 import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
+import Banner01 from '../assets/img/background/Banner.svg';
 
 export function HomePage() {
   return (
@@ -54,7 +55,7 @@ export function HomePage() {
           </div>
           <div className="container-lg">
             <h1>One more friend</h1>
-            <h2>Thousands more fun!</h2>
+            <h3>Thousands more fun!</h3>
             <p>Having a pet means you have more joy, a new friend, a happy<br/>person who will always be with you to have fun. We have 200+<br/>different pets that can meet your needs!</p>
             {/* btn區塊 */}
             <div className="btnArea">
@@ -116,6 +117,34 @@ export function HomePage() {
                     )
                   })
                 }
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Banner */}
+        <div className="bannerOne">
+          <div className="container-lg">
+            <div className="banner01">
+              <img src={Banner01} alt="" />
+            </div>
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="textArea">
+                  <h2>One more friend</h2>
+                  <h4>&nbsp;&nbsp;&nbsp;&nbsp;Thousands more fun!</h4>
+                  <span>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</span>
+                </div>
+                <div className="btnArea">
+                  <Button
+                    text='View Intro'
+                    style='btnSecondary'
+                    icon={Play}
+                  ></Button>
+                  <Button
+                    style='btnPrimary'
+                    text='Explore now'
+                  ></Button>
+                </div>
               </div>
             </div>
           </div>
