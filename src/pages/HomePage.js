@@ -18,9 +18,6 @@ import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
 import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
 
 export function HomePage() {
-  // useEffect(() => {
-  //   console.log(WhatsNewData)
-  // },[])
   return (
     <>
       <div className="homePage">
@@ -111,7 +108,7 @@ export function HomePage() {
                                 <span>•</span>
                                 <span className="aboutAge">Age: {item.age} month</span>
                               </div>
-                              <span className="cardPrice">{item.price} VND</span>
+                              <span className="cardPrice">{item.price.toLocaleString()} VND</span>
                             </div>
                           </div>
                         </div>
