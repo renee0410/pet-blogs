@@ -5,6 +5,8 @@ import { Button } from './Button';
 import Logo from '../assets/img/Logo.svg';
 import Country from '../assets/img/icon/Frame 45.svg';
 import ArrowDown from '../assets/img/icon/Caret_Down_SM.svg';
+import Hamburger from '../assets/img/icon/Hamburger_MD.svg';
+import Search from '../assets/img/icon/Search.svg';
 
 export function Header() {
   // 是否滾動
@@ -21,42 +23,50 @@ export function Header() {
 
   return (
     <header className={ isScrolling ? 'scrollBgc' : '' }>
-      <div className="container-lg container-md">
+      <div className="container">
         <div className="headerArea">
+          <div className="menuIcon">
+            <img src={Hamburger} alt="" />
+          </div>
           <div className="header-l">
-                {/* logo */}
-                  <img src={Logo} alt="" />
-                {/* 導覽列 */}
-                <nav>
-                  <a href="#">Home</a>
-                  <a href="#">Category</a>
-                  <a href="#">About</a>
-                  <a href="#">Contact</a>
-                </nav>
+            {/* logo */}
+            <div className="logo">
+              <img src={Logo} alt="" />
             </div>
-            <div className="header-r">
-              {/* 搜尋欄 */}
-              <div className="searchArea">
-                <SearchBar></SearchBar>
+            {/* 導覽列 */}
+            <nav className='navBar'>
+              <a href="#">Home</a>
+              <a href="#">Category</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+          </div>
+          <div className="header-r">
+            {/* 搜尋欄 */}
+            <div className="searchArea">
+              <SearchBar></SearchBar>
+            </div>
+            {/* btn */}
+            <div className="btnArea">
+              <Button
+                text='Join'
+                style='btnPrimary'
+              ></Button>
+            </div>
+            {/* 語言下拉選單 */}
+            <div className="languageSelection">
+              <div className="countyIcon">
+                <img src={Country} alt="" />
               </div>
-              {/* btn */}
-              <div className="btnArea">
-                <Button
-                  text='Join the community'
-                  style='btnPrimary'
-                ></Button>
-              </div>
-              {/* 語言下拉選單 */}
-              <div className="languageSelection">
-                <div className="countyIcon">
-                  <img src={Country} alt="" />
-                </div>
-                <p>VND</p>
-                <div className="arrowIcon">
-                  <img src={ArrowDown} alt="" />
-                </div>
+              <p>VND</p>
+              <div className="arrowIcon">
+                <img src={ArrowDown} alt="" />
               </div>
             </div>
+          </div>
+          <div className="searchIcon">
+            <img src={Search} alt="" />
+          </div>
         </div>
       </div>
     </header>

@@ -9,22 +9,35 @@
   }
 }
 
+// ------------- rwd -------------
+// 筆電
+@mixin laptop{
+  @media(max-width:1024px){
+    @content;
+  }
+}
+// 平板尺寸
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+// 手機尺寸 
+@mixin mobile{
+  @media(max-width:480px){
+    @content;
+  }
+}
+
 // ------------- layout -------------
-$gutter-width: 40px;
+$gutter-width: 20px;
 $grid-sum: 12;
-.container-lg {
+.container {
   max-width: 1180px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 8px 0 8px;
-}
-@media (max-width: 768px) {
-  .container-md {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 8px 0 8px;
-  }
+  padding: 0 32px;
 }
 .row {
   display: flex;
@@ -41,8 +54,8 @@ $grid-sum: 12;
     padding-right: $gutter-width / 2;
   }
 }
-// 平板设备样式
-@media (max-width: 768px) {
+// 平板設備樣式
+@include pad {
   @for $var from 1 through $grid-sum {
     .col-md-#{$var} {
       position: relative;
@@ -51,20 +64,6 @@ $grid-sum: 12;
       padding-left: $gutter-width / 2;
       padding-right: $gutter-width / 2;
     }
-  }
-}
-
-// ------------- rwd -------------
-// 平板尺寸
-@mixin pad{
-  @media(max-width:768px){
-    @content;
-  }
-}
-// 手機尺寸 
-@mixin mobile{
-  @media(max-width:480px){
-    @content;
   }
 }
 

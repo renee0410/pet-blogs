@@ -1,5 +1,4 @@
 import { Button } from "../components/Button";
-import { useEffect } from "react";
 // json
 import WhatsNewData from '../assets/cardData/whatsNew.json';
 
@@ -26,14 +25,14 @@ export function HomePage() {
         <div className="hero">
           {/* 背景 */}
           <div className="backgroundImg">
-            <img src={Human} alt="" />
+            <img src={Human} className="imgStyle" alt="" />
           </div>
           {/* rectangle背景 */}
           <div className="img1">
-            <img src={Rectangle1} alt="" />
+            <img src={Rectangle1} className="imgStyle" alt="" />
           </div>
           <div className="img2">
-            <img src={Rectangle2} alt="" />
+            <img src={Rectangle2} className="imgStyle" alt="" />
           </div>
           <div className="img3">
             <img src={Rectangle3} alt="" />
@@ -53,10 +52,10 @@ export function HomePage() {
           <div className="img9">
             <img src={Rectangle9} alt="" />
           </div>
-          <div className="container-lg">
+          <div className="container">
             <h1>One more friend</h1>
             <h3>Thousands more fun!</h3>
-            <p>Having a pet means you have more joy, a new friend, a happy<br/>person who will always be with you to have fun. We have 200+<br/>different pets that can meet your needs!</p>
+            <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+<br/>different pets that can meet your needs!</p>
             {/* btn區塊 */}
             <div className="btnArea">
               <Button
@@ -73,7 +72,7 @@ export function HomePage() {
         </div>
         {/* whats new */}
         <div className="whatsNew">
-          <div className="container-lg container-md">
+          <div className="container">
             <div className="whatsNewTop"> 
               {/* 標題 */}
               <div className="title">
@@ -123,9 +122,9 @@ export function HomePage() {
         </div>
         {/* Banner */}
         <div className="bannerOne">
-          <div className="container-lg">
+          <div className="container">
             <div className="banner01">
-              <img src={Banner01} alt="" />
+              {/* <img src={Banner01} alt="" /> */}
             </div>
             <div className="row">
               <div className="col-lg-5">
