@@ -1,6 +1,8 @@
 import { Button } from "../components/Button";
+import { ProductCards } from "../components/ProductCards";
 // json
 import WhatsNewData from '../assets/cardData/whatsNew.json';
+import OurProductsData from '../assets/cardData/ourProducts.json'; 
 
 // icon
 import Play from '../assets/img/icon/Vector.png';
@@ -77,7 +79,7 @@ export function HomePage() {
           <div className="container">
              {/* whats new */}
             <div className="whatsNew">
-              <div className="whatsNewTop"> 
+              <div className="productsAreaTop"> 
                 {/* 標題 */}
                 <div className="title">
                   <p>Whats new?</p>
@@ -95,9 +97,12 @@ export function HomePage() {
               {/* product cards */}
               <div className="productCardsArea">
                 <div className="row">
-                  {
+                  <ProductCards
+                    productCardsData = {WhatsNewData}
+                    type = 'pets'
+                  ></ProductCards>
+                  {/* {
                     WhatsNewData.data.map((item) => {
-                      console.log(item)
                       return (
                         <>
                           <div className="col-lg-3 col-md-4 col-sm-6">
@@ -108,9 +113,9 @@ export function HomePage() {
                               <div className="cardBody">
                                 <p className="cardTitle">{item.title}</p>
                                 <div className="cardInfo">
-                                  <span className="aboutGene">Gene: {item.gene}</span>
+                                  <span className="aboutLabelOne">labelOne: {item.labelOne}</span>
                                   <span>•</span>
-                                  <span className="aboutAge">Age: {item.age} month</span>
+                                  <span className="aboutLabelTwo">Age: {item.age} month</span>
                                 </div>
                                 <span className="cardPrice">{item.price.toLocaleString()} VND</span>
                               </div>
@@ -119,7 +124,7 @@ export function HomePage() {
                         </>
                       )
                     })
-                  }
+                  } */}
                 </div>
               </div>
             </div>
@@ -147,6 +152,31 @@ export function HomePage() {
                       text='Explore now'
                     ></Button>
                   </div>
+                </div>
+              </div>
+            </div>
+            {/* our products */}
+            <div className="ourProducts">
+              <div className="productsAreaTop">
+                <div className="title">
+                    <p>Hard to choose right products for your pets?</p>
+                    <h5>Our Products</h5>
+                  </div>
+                  {/* btn */}
+                  <div className="btnArea">
+                    <Button
+                      style='btnSecondary'
+                      text='View more'
+                      icon={ArrowRight}
+                    ></Button>
+                  </div>
+              </div>
+              <div className="productCardsArea">
+                <div className="row">
+                  <ProductCards
+                    productCardsData={OurProductsData}
+                    type = 'products'
+                  ></ProductCards>
                 </div>
               </div>
             </div>

@@ -4,64 +4,64 @@
       {
         "imgUrl": "/img/whatsNew/image1.svg",
         "title": "MO231 - Pomeranian White",
-        "gene": "Male",
-        "age": 2,
+        "labelOne": "Male",
+        "labelTwo": 2,
         "price": 6900000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image2.svg",
         "title": "MO502 - Poodle Tiny Yellow",
-        "gene": "Female",
-        "age": 2,
+        "labelOne": "Female",
+        "labelTwo": 2,
         "price": 3900000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image3.svg",
         "title": "MO102 - Poodle Tiny Sepia",
-        "gene": "Male",
-        "age": 2,
+        "labelOne": "Male",
+        "labelTwo": 2,
         "price": 4000000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image4.svg",
         "title": "MO512 - Alaskan Malamute Grey",
-        "gene": "Male",
-        "age": 2,
+        "labelOne": "Male",
+        "labelTwo": 2,
         "price": 8900000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image5.svg",
         "title": "MO231 - Pembroke Corgi Cream",
-        "gene": "Male",
-        "age": 2,
+        "labelOne": "Male",
+        "labelTwo": 2,
         "price": 7900000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image6.svg",
         "title": "MO502 - Pembroke Corgi Tricolor",
-        "gene": "Female",
-        "age": 2,
+        "labelOne": "Female",
+        "labelTwo": 2,
         "price": 9000000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image7.svg",
         "title": "MO231 - Pomeranian White",
-        "gene": "Female",
-        "age": 2,
+        "labelOne": "Female",
+        "labelTwo": 2,
         "price": 6500000,
         "currency": "VND"
       },
       {
         "imgUrl": "/img/whatsNew/image8.svg",
         "title": "MO512 - Poodle Tiny Dairy Cow",
-        "gene": "Male",
-        "age": 2,
+        "labelOne": "Male",
+        "labelTwo": 2,
         "price": 5000000,
         "currency": "VND"
       }
