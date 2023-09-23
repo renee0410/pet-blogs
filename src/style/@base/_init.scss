@@ -42,8 +42,8 @@ $grid-sum: 12;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -($gutter-width / 2);
-  margin-right: -($gutter-width / 2);
+  // margin-left: -($gutter-width / 2);
+  // margin-right: -($gutter-width / 2);
 }
 @for $var from 1 through $grid-sum {
   .col-lg-#{$var} {
@@ -58,6 +58,18 @@ $grid-sum: 12;
 @include pad {
   @for $var from 1 through $grid-sum {
     .col-md-#{$var} {
+      position: relative;
+      max-width: 100% * ($var / $grid-sum);
+      flex: 0 0 (100% * ($var / $grid-sum));
+      padding-left: $gutter-width / 2;
+      padding-right: $gutter-width / 2;
+    }
+  }
+}
+// 手機樣式
+@include mobile() {
+  @for $var from 1 through $grid-sum {
+    .col-sm-#{$var} {
       position: relative;
       max-width: 100% * ($var / $grid-sum);
       flex: 0 0 (100% * ($var / $grid-sum));
@@ -90,6 +102,9 @@ h4 {
 }
 h5 {
   font-size: $fontSizeDefault + $fontSpace * 5; //24px
+}
+h6 {
+  font-size: $fontSizeDefault + $fontSpace * 3;  // 20px
 }
 // p 16px
 span {
