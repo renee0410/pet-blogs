@@ -21,7 +21,7 @@
   }
 
   // 產品區塊共用樣式
-  .productsAreaTop {
+  .titleArea {
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
@@ -287,6 +287,36 @@
         padding-top: 24px;
         justify-content: center;
       }
+    }
+  }
+
+  // brands
+  .brandsArea {
+    @include pad {
+      display: none;
+    }
+
+    .titleArea {
+
+      .title {
+        display: flex;
+        align-items: center;
+
+        p {
+          line-height: 31px;
+        }
+        h5 {
+          line-height: 36px;
+          padding-left: 8px;
+        }
+      }
+    }
+
+    .brandsImg {
+      padding-top: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
     }
   }
 }

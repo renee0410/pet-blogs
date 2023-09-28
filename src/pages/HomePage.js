@@ -19,6 +19,14 @@ import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
 import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
 import Banner01 from '../assets/img/background/Banner.svg';
 import Banner01Mobile from '../assets/img/background/Banner01Mobile.svg';
+// brands
+import Brand1 from '../assets/img/brand/brand1.svg';
+import Brand2 from '../assets/img/brand/brand2.svg';
+import Brand3 from '../assets/img/brand/brand3.svg';
+import Brand4 from '../assets/img/brand/brand4.svg';
+import Brand5 from '../assets/img/brand/brand5.svg';
+import Brand6 from '../assets/img/brand/brand6.svg';
+import Brand7 from '../assets/img/brand/brand7.svg';
 
 export function HomePage() {
   return (
@@ -77,9 +85,9 @@ export function HomePage() {
             </div>
           </div>
           <div className="container">
-             {/* whats new */}
+            {/* whats new */}
             <div className="whatsNew">
-              <div className="productsAreaTop"> 
+              <div className="titleArea"> 
                 {/* 標題 */}
                 <div className="title">
                   <p>Whats new?</p>
@@ -101,34 +109,10 @@ export function HomePage() {
                     productCardsData = {WhatsNewData}
                     type = 'pets'
                   ></ProductCards>
-                  {/* {
-                    WhatsNewData.data.map((item) => {
-                      return (
-                        <>
-                          <div className="col-lg-3 col-md-4 col-sm-6">
-                            <div className="productCard">
-                              <div className="imgBoxFit">
-                                <img src={item.imgUrl} alt="" />
-                              </div>
-                              <div className="cardBody">
-                                <p className="cardTitle">{item.title}</p>
-                                <div className="cardInfo">
-                                  <span className="aboutLabelOne">labelOne: {item.labelOne}</span>
-                                  <span>•</span>
-                                  <span className="aboutLabelTwo">Age: {item.age} month</span>
-                                </div>
-                                <span className="cardPrice">{item.price.toLocaleString()} VND</span>
-                              </div>
-                            </div>
-                          </div>
-                        </>
-                      )
-                    })
-                  } */}
                 </div>
               </div>
             </div>
-            {/* Banner */}
+            {/* banner */}
             <div className="bannerOne">
               <div className="banner01">
                 <img src={Banner01} className="banner01" alt="" />
@@ -157,7 +141,7 @@ export function HomePage() {
             </div>
             {/* our products */}
             <div className="ourProducts">
-              <div className="productsAreaTop">
+              <div className="titleArea">
                 <div className="title">
                     <p>Hard to choose right products for your pets?</p>
                     <h5>Our Products</h5>
@@ -178,6 +162,32 @@ export function HomePage() {
                     type = 'products'
                   ></ProductCards>
                 </div>
+              </div>
+            </div>
+            {/* brands */}
+            <div className="brandsArea">
+              <div className="titleArea">
+                <div className="title">
+                    <p>Proud to be part of</p>
+                    <h5>Pet Sellers</h5>
+                  </div>
+                  {/* btn */}
+                  <div className="btnArea">
+                    <Button
+                      style='btnSecondary'
+                      text='View all our sellers'
+                      icon={ArrowRight}
+                    ></Button>
+                  </div>
+              </div>
+              <div className="brandsImg">
+                <img src={Brand1} alt="" />
+                <img src={Brand2} alt="" />
+                <img src={Brand3} alt="" />
+                <img src={Brand4} alt="" />
+                <img src={Brand5} alt="" />
+                <img src={Brand6} alt="" />
+                <img src={Brand7} alt="" />
               </div>
             </div>
           </div>
