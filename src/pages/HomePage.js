@@ -4,7 +4,7 @@ import { BlockCards } from "../components/BlockCards";
 // json
 import WhatsNewData from '../assets/cardData/whatsNew.json';
 import OurProductsData from '../assets/cardData/ourProducts.json'; 
-
+import petKnowledgeData from '../assets/cardData/petKnowledge.json';
 // icon
 import Play from '../assets/img/icon/Vector.png';
 import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
@@ -237,7 +237,11 @@ export function HomePage() {
                 </div>
               </div>
               <div className="blockCardsArea">
-                <BlockCards></BlockCards>
+                <div className="row">
+                  <BlockCards
+                    blockCardsData={petKnowledgeData}
+                  ></BlockCards>
+                </div>
               </div>
             </div>
           </div>
