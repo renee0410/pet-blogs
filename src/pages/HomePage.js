@@ -1,5 +1,6 @@
 import { Button } from "../components/Button";
 import { ProductCards } from "../components/ProductCards";
+import { BlockCards } from "../components/BlockCards";
 // json
 import WhatsNewData from '../assets/cardData/whatsNew.json';
 import OurProductsData from '../assets/cardData/ourProducts.json'; 
@@ -7,6 +8,7 @@ import OurProductsData from '../assets/cardData/ourProducts.json';
 // icon
 import Play from '../assets/img/icon/Vector.png';
 import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
+import Paw from '../assets/img/icon/fontisto_paw.svg';
 //background
 import Human from '../assets/img/background/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.svg';
 import Rectangle1 from '../assets/img/background/rectangle/Rectangle 1.svg';
@@ -18,6 +20,7 @@ import Rectangle7 from '../assets/img/background/rectangle/Rectangle 7.svg';
 import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
 import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
 import Banner01 from '../assets/img/background/Banner.svg';
+import Banner02 from '../assets/img/background/Banner02.svg';
 import Banner01Mobile from '../assets/img/background/Banner01Mobile.svg';
 // brands
 import Brand1 from '../assets/img/brand/brand1.svg';
@@ -113,12 +116,12 @@ export function HomePage() {
               </div>
             </div>
             {/* banner */}
-            <div className="bannerOne">
-              <div className="banner01">
+            <div className="bannerArea01">
+              <div className="banner">
                 <img src={Banner01} className="banner01" alt="" />
                 <img src={Banner01Mobile} className="banner01Mobile" alt="" />
               </div>
-              <div className="row">
+              <div className=" banner01 row r-block">
                 <div className="col-lg-5 col-md-12 mr">
                   <div className="textArea">
                     <h2>One more friend</h2>
@@ -188,6 +191,53 @@ export function HomePage() {
                 <img src={Brand5} alt="" />
                 <img src={Brand6} alt="" />
                 <img src={Brand7} alt="" />
+              </div>
+            </div>
+            {/* banner */}
+            <div className="bannerArea02">
+              <div className="banner">
+                <img src={Banner02} alt="" />
+              </div>
+              <div className=" banner02 row l-block">
+                <div className="col-lg-5 col-md-12 mr">
+                  <div className="textArea">
+                    <h2>Adoption</h2>
+                    <h4>We need help. so do they.</h4>
+                    <span>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</span>
+                  </div>
+                  <div className="btnArea">
+                    <Button
+                      text='View Intro'
+                      style='btnSecondary'
+                      icon={Play}
+                    ></Button>
+                    <Button
+                      style='btnPrimary'
+                      text='Explore now'
+                    ></Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* pet knowledge */}
+            <div className="petKnowledge">
+              <div className="titleArea"> 
+                {/* 標題 */}
+                <div className="title">
+                  <p>You already know ?</p>
+                  <h5>Useful pet knowledge</h5>
+                </div>
+                {/* btn */}
+                <div className="btnArea">
+                  <Button
+                    style='btnSecondary'
+                    text='View more'
+                    icon={ArrowRight}
+                  ></Button>
+                </div>
+              </div>
+              <div className="blockCardsArea">
+                <BlockCards></BlockCards>
               </div>
             </div>
           </div>
