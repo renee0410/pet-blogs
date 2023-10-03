@@ -42,6 +42,10 @@
         font-weight: bold;
         line-height: 24px;
         padding-top: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;  // 控制在3行
+        overflow: hidden;
       }
       .cardText {
         padding-top: 8px;
