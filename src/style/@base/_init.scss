@@ -1,0 +1,112 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+  font-size: $fontSizeDefault;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+
+// ------------- rwd -------------
+// 筆電
+@mixin laptop{
+  @media(max-width:1024px){
+    @content;
+  }
+}
+// 平板尺寸
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+// 手機尺寸 
+@mixin mobile{
+  @media(max-width:480px){
+    @content;
+  }
+}
+
+// ------------- layout -------------
+$gutter-width: 20px;
+$grid-sum: 12;
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 32px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: -($gutter-width / 2);
+  // margin-right: -($gutter-width / 2);
+}
+@for $var from 1 through $grid-sum {
+  .col-lg-#{$var} {
+    position: relative;
+    max-width: 100% * ($var / $grid-sum);
+    flex: 0 0 (100% * ($var / $grid-sum));
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+  }
+}
+// 平板設備樣式
+@include pad {
+  @for $var from 1 through $grid-sum {
+    .col-md-#{$var} {
+      position: relative;
+      max-width: 100% * ($var / $grid-sum);
+      flex: 0 0 (100% * ($var / $grid-sum));
+      padding-left: $gutter-width / 2;
+      padding-right: $gutter-width / 2;
+    }
+  }
+}
+// 手機樣式
+@include mobile() {
+  @for $var from 1 through $grid-sum {
+    .col-sm-#{$var} {
+      position: relative;
+      max-width: 100% * ($var / $grid-sum);
+      flex: 0 0 (100% * ($var / $grid-sum));
+      padding-left: $gutter-width / 2;
+      padding-right: $gutter-width / 2;
+    }
+  }
+}
+
+// ------------- btn -------------
+button {
+  border: 1.5px solid $primary;
+  padding: 12px 28px 12px 28px;
+  border-radius: 57px;
+  cursor: pointer;
+}
+
+// ------------- 文字大小 -------------
+h1 {
+  font-size: $fontSizeDefault + $fontSpace * 28;  // 60px
+}
+h2 {
+  font-size: $fontSizeDefault + $fontSpace * 23;  // 52px
+}
+h3 {
+  font-size: $fontSizeDefault + $fontSpace * 19;  // 46px
+}
+h4 {
+  font-size: $fontSizeDefault + $fontSpace * 13;  // 36px
+}
+h5 {
+  font-size: $fontSizeDefault + $fontSpace * 5; //24px
+}
+h6 {
+  font-size: $fontSizeDefault + $fontSpace * 3;  // 20px
+}
+// p 16px
+span {
+  font-size: $fontSizeDefault - $fontSpace; //14px
+}

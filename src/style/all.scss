@@ -1,0 +1,14 @@
+// 初始化設定
+@import '../style/@base/_reset.scss';
+@import '../style/@parm/_variety.scss';
+@import '../style/@base/_init.scss';
+
+// components
+@import '../style/@components/_header.scss';
+@import '../style/@components/_searchBar.scss';
+@import '../style/@components/_button.scss';
+@import '../style/@components/_productCards.scss';
+@import '../style/@components/_blockCards.scss';
+
+// pages
+@import '../style/@pages/_homePage.scss';

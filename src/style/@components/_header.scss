@@ -1,0 +1,97 @@
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  &.scrollBgc {
+    background-color: #fff;
+  }
+  
+  .headerArea {
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      align-items: center;
+    }
+
+    .menuIcon {
+      display: none;
+
+      @include laptop {
+        display: block;
+      }
+    }
+  
+    .header-l {
+      padding-right: 36px;
+      display: flex;
+
+      @include laptop {
+        padding-right: 0;
+      }
+
+      .logo {
+        @include laptop {
+          align-self: center;
+        }
+      }
+
+      .navBar {
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+
+        @include laptop {
+          display: none;
+        }
+    
+        a {
+          padding: 8px 0 8px 48px;
+          font-weight: bold;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .header-r {
+      display: flex;
+
+      @include laptop {
+        display: none;
+      }
+
+      .searchArea {
+        padding-right: 14px;
+      }
+
+      // btn
+      .btnArea {
+        padding-right: 14px;
+      }
+
+      // 語言下拉選單
+      .languageSelection {
+        display: flex;
+        align-items: center;
+
+        .countyIcon {
+          padding-right: 8px;
+        }
+
+        .arrowIcon {
+          padding-left: 4px;
+        }
+      }
+    }
+
+    .searchIcon {
+      display: none;
+
+      @include laptop {
+        display: block;
+      }
+    }
+  }
+}

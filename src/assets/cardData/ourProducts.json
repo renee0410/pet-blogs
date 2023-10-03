@@ -1,0 +1,65 @@
+{
+  "data":
+    [
+      {
+        "imgUrl": "/img/ourProducts/image1.svg",
+        "title": "Reflex Plus Adult Cat Food Salmon",
+        "labelOne": "Dog Food",
+        "labelTwo": "385gm",
+        "price": 140000 ,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image2.svg",
+        "title": "Reflex Plus Adult Cat Food Salmon",
+        "labelOne": "Cat Food",
+        "labelTwo": "1.5kg",
+        "price": 165000,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image3.svg",
+        "title": "Cat scratching ball toy kitten sisal rope ball",
+        "labelOne": "Toy",
+        "price": 1100000,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image4.svg",
+        "title": "Cute Pet Cat Warm Nest",
+        "labelOne": "Toy",
+        "price": 410000,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image5.svg",
+        "title": "NaturVet Dogs - Omega-Gold Plus Salmon Oil",
+        "labelOne": "Dog Food",
+        "labelTwo": "385gm",
+        "price": 350000,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image6.svg",
+        "title": "Costumes Fashion Pet Clother Cowboy Rider",
+        "labelOne": "Costume",
+        "labelTwo": "1.5kg",
+        "price": 500000,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image7.svg",
+        "title": "Costumes Chicken Drumsti ck Headband",
+        "labelOne": "Costume",
+        "price": 400000 ,
+        "currency": "VND"
+      },
+      {
+        "imgUrl": "/img/ourProducts/image8.svg",
+        "title": "Plush Pet Toy",
+        "labelOne": "Toy",
+        "price": 250000,
+        "currency": "VND"
+      }
+    ]
+}
