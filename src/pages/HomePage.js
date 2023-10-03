@@ -8,7 +8,6 @@ import petKnowledgeData from '../assets/cardData/petKnowledge.json';
 // icon
 import Play from '../assets/img/icon/Vector.png';
 import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
-import Paw from '../assets/img/icon/fontisto_paw.svg';
 import Facebook from '../assets/img/icon/Facebook - Negative.svg';
 import Twitter from '../assets/img/icon/Twitter - Negative.svg';
 import Instagram from '../assets/img/icon/Instagram - Negative.svg';
