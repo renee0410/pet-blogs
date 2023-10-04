@@ -1,11 +1,22 @@
 {
   "files": {
     "main.css": "/pet-blogs/static/css/main.058a35c3.css",
-    "main.js": "/pet-blogs/static/js/main.3e4abc55.js",
+    "main.js": "/pet-blogs/static/js/main.ea21b1dc.js",
     "static/js/787.ecc344a7.chunk.js": "/pet-blogs/static/js/787.ecc344a7.chunk.js",
     "static/media/Banner01Mobile.svg": "/pet-blogs/static/media/Banner01Mobile.7cc96abdaabad5b250f3f83b38f974fa.svg",
     "static/media/Banner.svg": "/pet-blogs/static/media/Banner.355bd07f4ba309f6d192f8a331fcb731.svg",
     "static/media/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.svg": "/pet-blogs/static/media/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.9a1df6054daf3286d4a8d691d0da572b.svg",
+    "static/media/Frame1.svg": "/pet-blogs/static/media/Frame1.55090b8f8c2bd4ef9d0c4041f6aaef95.svg",
+    "static/media/Frame3.svg": "/pet-blogs/static/media/Frame3.d6a15821cbb5f5a0dd043663adb8cbdd.svg",
+    "static/media/image2.svg": "/pet-blogs/static/media/image2.ad56bbcb41320baea8551b373d88873b.svg",
+    "static/media/image6.svg": "/pet-blogs/static/media/image6.7e3777b36e4bfd83954c9dc506b01e1d.svg",
+    "static/media/Frame2.svg": "/pet-blogs/static/media/Frame2.f202e819d8764b3c3edb3ff251c74753.svg",
+    "static/media/image4.svg": "/pet-blogs/static/media/image4.5d888b7c20aafca4743e60e3cb0c99fe.svg",
+    "static/media/image8.svg": "/pet-blogs/static/media/image8.9832ed3d9051e3697334ac0ac64773e1.svg",
+    "static/media/image7.svg": "/pet-blogs/static/media/image7.26a9e137a7c20530e397ca3e215d37e8.svg",
+    "static/media/image3.svg": "/pet-blogs/static/media/image3.905320ae64587230c00f715b02a86286.svg",
+    "static/media/image1.svg": "/pet-blogs/static/media/image1.c2c037ad1068da49694955d15ab6ed1f.svg",
+    "static/media/image5.svg": "/pet-blogs/static/media/image5.52c769f32cb217bbbeda3eb8310a5ac7.svg",
     "static/media/brand6.svg": "/pet-blogs/static/media/brand6.ee9935aad6ab30b5673104c308f3a02e.svg",
     "static/media/brand3.svg": "/pet-blogs/static/media/brand3.01124aacce6bd470ece917ebfa115bb7.svg",
     "static/media/Banner02.svg": "/pet-blogs/static/media/Banner02.2b9054284ca51bd8c98af593839c3f55.svg",
@@ -36,11 +47,11 @@
     "static/media/Rectangle 2.svg": "/pet-blogs/static/media/Rectangle 2.bac9bf5a7c0e9a22d5d4d91d9afec9c9.svg",
     "static/media/Caret_Down_SM.svg": "/pet-blogs/static/media/Caret_Down_SM.418e4256dd00eb990771114729c0f3c4.svg",
     "main.058a35c3.css.map": "/pet-blogs/static/css/main.058a35c3.css.map",
-    "main.3e4abc55.js.map": "/pet-blogs/static/js/main.3e4abc55.js.map",
+    "main.ea21b1dc.js.map": "/pet-blogs/static/js/main.ea21b1dc.js.map",
     "787.ecc344a7.chunk.js.map": "/pet-blogs/static/js/787.ecc344a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.058a35c3.css",
-    "static/js/main.3e4abc55.js"
+    "static/js/main.ea21b1dc.js"
   ]
 }
