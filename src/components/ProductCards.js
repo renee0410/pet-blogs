@@ -3,7 +3,7 @@ export function ProductCards({ productCardsData, type }) {
 
   return (
     <>
-      { productCardsData.data.map((item, index) => {
+      { productCardsData.map((item, index) => {
         return (
           <div className="col-lg-3 col-md-4 col-sm-6" key={index}>
             <div className="productCard">

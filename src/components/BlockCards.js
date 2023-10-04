@@ -3,7 +3,7 @@ export function BlockCards({ blockCardsData }) {
   return (
     <>
       {
-        blockCardsData.data.map((item,index) => {
+        blockCardsData.map((item,index) => {
           return (
             <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
               <div className="blockCard">

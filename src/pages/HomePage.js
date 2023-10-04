@@ -1,10 +1,10 @@
 import { Button } from "../components/Button";
 import { ProductCards } from "../components/ProductCards";
 import { BlockCards } from "../components/BlockCards";
-// json
-import WhatsNewData from '../assets/cardData/whatsNew.json';
-import OurProductsData from '../assets/cardData/ourProducts.json'; 
-import petKnowledgeData from '../assets/cardData/petKnowledge.json';
+// data
+import petKnowledge from '../assets/cardData/petKnowledge';
+import whatsNewData from '../assets/cardData/whatsNew';
+import OurProducts from '../assets/cardData/ourProducts';
 // icon
 import Play from '../assets/img/icon/Vector.png';
 import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
@@ -37,6 +37,7 @@ import Brand7 from '../assets/img/brand/brand7.svg';
 import FooterLogo from '../assets/img/footerLogo.svg';
 
 export function HomePage() {
+  console.log(whatsNewData)
   return (
     <>
       <div className="homePage">
@@ -114,7 +115,7 @@ export function HomePage() {
             <div className="productCardsArea">
               <div className="row">
                 <ProductCards
-                  productCardsData = {WhatsNewData}
+                  productCardsData = {whatsNewData}
                   type = 'pets'
                 ></ProductCards>
               </div>
@@ -166,7 +167,7 @@ export function HomePage() {
             <div className="productCardsArea">
               <div className="row">
                 <ProductCards
-                  productCardsData={OurProductsData}
+                  productCardsData={OurProducts}
                   type = 'products'
                 ></ProductCards>
               </div>
@@ -244,7 +245,7 @@ export function HomePage() {
             <div className="blockCardsArea">
               <div className="row">
                 <BlockCards
-                  blockCardsData={petKnowledgeData}
+                  blockCardsData={petKnowledge}
                 ></BlockCards>
               </div>
             </div>
