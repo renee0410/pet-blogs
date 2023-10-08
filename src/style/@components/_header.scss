@@ -32,6 +32,8 @@ header {
       }
 
       .logo {
+        padding-right: 32px;
+
         @include laptop {
           align-self: center;
         }
@@ -46,11 +48,29 @@ header {
           display: none;
         }
     
-        a {
-          padding: 8px 0 8px 48px;
+        .linkStyle {
+          padding: 16px 16px 8px 16px;
           font-weight: bold;
           display: inline-block;
           vertical-align: middle;
+
+          &::after {
+            content: "";
+            width: 75%;
+            height: 2px;
+            background-color: $primary;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            transform-origin: center; // 以中心進行縮放
+            transition: transform 0.3s ease-out; // 動畫效果
+          }
+
+          &.active::after,
+          &:hover::after {  
+            transform: translateX(-50%) scaleX(1);
+          }
         }
       }
     }
