@@ -120,7 +120,7 @@ export function HomePage() {
             </div>
             {/* product cards */}
             <div className="productCardsArea">
-              <div className="row">
+              <div className="">
                 <ProductCards
                   productCardsData = {whatsNewData}
                   type = 'pets'
@@ -172,7 +172,7 @@ export function HomePage() {
                 </div>
             </div>
             <div className="productCardsArea">
-              <div className="row">
+              <div className="">
                 <ProductCards
                   productCardsData={ourProducts}
                   type = 'products'
