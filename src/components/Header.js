@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { Button } from './Button';
+// logo
+import { Logo } from '../assets/img/logo/index';
 // icon
-import Logo from '../assets/img/Logo.svg';
-import Country from '../assets/img/icon/Frame 45.svg';
-import ArrowDown from '../assets/img/icon/Caret_Down_SM.svg';
-import Hamburger from '../assets/img/icon/Hamburger_MD.svg';
-import Search from '../assets/img/icon/Search.svg';
+import {
+  Country,
+  ArrowDown,
+  Hamburger,
+  Search,
+} from '../assets/img/icon/index';
 
 export function Header() {
   // 是否滾動

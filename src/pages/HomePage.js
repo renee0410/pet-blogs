@@ -2,42 +2,49 @@ import { Button } from "../components/Button";
 import { ProductCards } from "../components/ProductCards";
 import { BlockCards } from "../components/BlockCards";
 // data
-import petKnowledge from '../assets/cardData/petKnowledge';
-import whatsNewData from '../assets/cardData/whatsNew';
-import OurProducts from '../assets/cardData/ourProducts';
+import {
+  petKnowledge,
+  whatsNewData,
+  ourProducts,
+} from '../assets/cardData/index';
 // icon
-import Play from '../assets/img/icon/Vector.png';
-import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
-import Facebook from '../assets/img/icon/Facebook - Negative.svg';
-import Twitter from '../assets/img/icon/Twitter - Negative.svg';
-import Instagram from '../assets/img/icon/Instagram - Negative.svg';
-import Youtube from '../assets/img/icon/YouTube - Negative.svg';
+import {
+  Play,
+  ArrowRight,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from '../assets/img/icon/index.js';
 //background
-import Human from '../assets/img/background/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.svg';
-import Rectangle1 from '../assets/img/background/rectangle/Rectangle 1.svg';
-import Rectangle2 from '../assets/img/background/rectangle/Rectangle 2.svg';
-import Rectangle3 from '../assets/img/background/rectangle/Rectangle 3.svg';
-import Rectangle5 from '../assets/img/background/rectangle/Rectangle 5.svg';
-import Rectangle6 from '../assets/img/background/rectangle/Rectangle 6.svg';
-import Rectangle7 from '../assets/img/background/rectangle/Rectangle 7.svg';
-import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
-import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
-import Banner01 from '../assets/img/background/Banner.svg';
-import Banner02 from '../assets/img/background/Banner02.svg';
-import Banner01Mobile from '../assets/img/background/Banner01Mobile.svg';
+import {
+  Human,
+  Rectangle1,
+  Rectangle2,
+  Rectangle3,
+  Rectangle5,
+  Rectangle6,
+  Rectangle7,
+  Rectangle8,
+  Rectangle9,
+  Banner01,
+  Banner02,
+  Banner01Mobile,
+} from '../assets/img/background/index';
 // brands
-import Brand1 from '../assets/img/brand/brand1.svg';
-import Brand2 from '../assets/img/brand/brand2.svg';
-import Brand3 from '../assets/img/brand/brand3.svg';
-import Brand4 from '../assets/img/brand/brand4.svg';
-import Brand5 from '../assets/img/brand/brand5.svg';
-import Brand6 from '../assets/img/brand/brand6.svg';
-import Brand7 from '../assets/img/brand/brand7.svg';
+import {
+  Brand1,
+  Brand2,
+  Brand3,
+  Brand4,
+  Brand5,
+  Brand6,
+  Brand7,
+} from '../assets/img/brand/index';
 //logo
-import FooterLogo from '../assets/img/footerLogo.svg';
+import { FooterLogo } from '../assets/img/logo/index';
 
 export function HomePage() {
-  console.log(whatsNewData)
   return (
     <>
       <div className="homePage">
@@ -167,7 +174,7 @@ export function HomePage() {
             <div className="productCardsArea">
               <div className="row">
                 <ProductCards
-                  productCardsData={OurProducts}
+                  productCardsData={ourProducts}
                   type = 'products'
                 ></ProductCards>
               </div>
