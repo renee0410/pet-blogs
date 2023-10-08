@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { Button } from './Button';
+import { NavLink } from 'react-router-dom';
 // logo
 import { Logo } from '../assets/img/logo/index';
 // icon
@@ -38,10 +39,10 @@ export function Header() {
             </div>
             {/* 導覽列 */}
             <nav className='navBar'>
-              <a href="#">Home</a>
-              <a href="#">Category</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+              <NavLink to="/" className={({ isActive }) => isActive ? "linkStyle active" : "linkStyle"}>Home</NavLink>
+              <NavLink to="/category" className="linkStyle">Category</NavLink>
+              <NavLink to="/about" className="linkStyle">About</NavLink>
+              <NavLink to="/contact" className="linkStyle">Contact</NavLink>
             </nav>
           </div>
           <div className="header-r">

@@ -36,7 +36,6 @@ export function ProductCards({ productCardsData, type }) {
           })
         }
       </Masonry>
-      
     </ResponsiveMasonry>
   )
 }

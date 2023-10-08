@@ -120,12 +120,10 @@ export function HomePage() {
             </div>
             {/* product cards */}
             <div className="productCardsArea">
-              <div className="">
-                <ProductCards
-                  productCardsData = {whatsNewData}
-                  type = 'pets'
-                ></ProductCards>
-              </div>
+              <ProductCards
+                productCardsData = {whatsNewData}
+                type = 'pets'
+              ></ProductCards>
             </div>
           </div>
           {/* banner */}
@@ -172,12 +170,10 @@ export function HomePage() {
                 </div>
             </div>
             <div className="productCardsArea">
-              <div className="">
-                <ProductCards
-                  productCardsData={ourProducts}
-                  type = 'products'
-                ></ProductCards>
-              </div>
+              <ProductCards
+                productCardsData={ourProducts}
+                type = 'products'
+              ></ProductCards>
             </div>
           </div>
           {/* brands */}
