@@ -115,3 +115,51 @@ header {
     }
   }
 }
+
+// 平板以下尺寸的菜單彈窗
+.menuPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1500;
+
+  .background {
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    
+    .closeIcon {
+      font-size: $fontSizeDefault + $fontSpace * 13;
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      cursor: pointer;
+      transition: transform 0.3s ease; 
+      
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+
+    .menuArea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 140px;
+
+      a {
+        font-size: $fontSizeDefault + $fontSpace * 13;
+        color: $primary;
+        display: inline-block;
+        padding: 24px;
+        letter-spacing: .08rem;
+
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

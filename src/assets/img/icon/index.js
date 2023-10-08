@@ -8,3 +8,4 @@ export { default as Country } from '../icon/Frame 45.svg';
 export { default as ArrowDown } from '../icon/Caret_Down_SM.svg';
 export { default as Hamburger} from '../icon/Hamburger_MD.svg';
 export { default as Search } from '../icon/u_search.svg';
+export { default as Close} from '../icon/close_black.svg';
