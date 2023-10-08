@@ -2,9 +2,11 @@ import { Button } from "../components/Button";
 import { ProductCards } from "../components/ProductCards";
 import { BlockCards } from "../components/BlockCards";
 // data
-import petKnowledge from '../assets/cardData/petKnowledge';
-import whatsNewData from '../assets/cardData/whatsNew';
-import OurProducts from '../assets/cardData/ourProducts';
+import {
+  petKnowledge,
+  whatsNewData,
+  ourProducts,
+} from '../assets/cardData/index';
 // icon
 import Play from '../assets/img/icon/Vector.png';
 import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
@@ -37,7 +39,6 @@ import Brand7 from '../assets/img/brand/brand7.svg';
 import FooterLogo from '../assets/img/footerLogo.svg';
 
 export function HomePage() {
-  console.log(whatsNewData)
   return (
     <>
       <div className="homePage">
@@ -167,7 +168,7 @@ export function HomePage() {
             <div className="productCardsArea">
               <div className="row">
                 <ProductCards
-                  productCardsData={OurProducts}
+                  productCardsData={ourProducts}
                   type = 'products'
                 ></ProductCards>
               </div>
