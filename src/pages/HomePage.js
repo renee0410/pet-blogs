@@ -17,18 +17,20 @@ import {
   Youtube,
 } from '../assets/img/icon/index.js';
 //background
-import Human from '../assets/img/background/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.svg';
-import Rectangle1 from '../assets/img/background/rectangle/Rectangle 1.svg';
-import Rectangle2 from '../assets/img/background/rectangle/Rectangle 2.svg';
-import Rectangle3 from '../assets/img/background/rectangle/Rectangle 3.svg';
-import Rectangle5 from '../assets/img/background/rectangle/Rectangle 5.svg';
-import Rectangle6 from '../assets/img/background/rectangle/Rectangle 6.svg';
-import Rectangle7 from '../assets/img/background/rectangle/Rectangle 7.svg';
-import Rectangle8 from '../assets/img/background/rectangle/Rectangle 8.svg';
-import Rectangle9 from '../assets/img/background/rectangle/Rectangle 9.svg';
-import Banner01 from '../assets/img/background/Banner.svg';
-import Banner02 from '../assets/img/background/Banner02.svg';
-import Banner01Mobile from '../assets/img/background/Banner01Mobile.svg';
+import {
+  Human,
+  Rectangle1,
+  Rectangle2,
+  Rectangle3,
+  Rectangle5,
+  Rectangle6,
+  Rectangle7,
+  Rectangle8,
+  Rectangle9,
+  Banner01,
+  Banner02,
+  Banner01Mobile,
+} from '../assets/img/background/index';
 // brands
 import Brand1 from '../assets/img/brand/brand1.svg';
 import Brand2 from '../assets/img/brand/brand2.svg';
