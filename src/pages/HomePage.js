@@ -8,12 +8,14 @@ import {
   ourProducts,
 } from '../assets/cardData/index';
 // icon
-import Play from '../assets/img/icon/Vector.png';
-import ArrowRight from '../assets/img/icon/Chevron_Right_MD.svg';
-import Facebook from '../assets/img/icon/Facebook - Negative.svg';
-import Twitter from '../assets/img/icon/Twitter - Negative.svg';
-import Instagram from '../assets/img/icon/Instagram - Negative.svg';
-import Youtube from '../assets/img/icon/YouTube - Negative.svg';
+import {
+  Play,
+  ArrowRight,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from '../assets/img/icon/index.js';
 //background
 import Human from '../assets/img/background/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.svg';
 import Rectangle1 from '../assets/img/background/rectangle/Rectangle 1.svg';
