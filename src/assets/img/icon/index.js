@@ -4,3 +4,7 @@ export { default as Facebook } from '../icon/Facebook - Negative.svg';
 export { default as Twitter } from '../icon/Twitter - Negative.svg';
 export { default as Instagram} from '../icon/Instagram - Negative.svg';
 export { default as Youtube } from '../icon/YouTube - Negative.svg';
+export { default as Country } from '../icon/Frame 45.svg';
+export { default as ArrowDown } from '../icon/Caret_Down_SM.svg';
+export { default as Hamburger} from '../icon/Hamburger_MD.svg';
+export { default as Search } from '../icon/u_search.svg';

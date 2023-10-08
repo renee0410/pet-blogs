@@ -32,13 +32,15 @@ import {
   Banner01Mobile,
 } from '../assets/img/background/index';
 // brands
-import Brand1 from '../assets/img/brand/brand1.svg';
-import Brand2 from '../assets/img/brand/brand2.svg';
-import Brand3 from '../assets/img/brand/brand3.svg';
-import Brand4 from '../assets/img/brand/brand4.svg';
-import Brand5 from '../assets/img/brand/brand5.svg';
-import Brand6 from '../assets/img/brand/brand6.svg';
-import Brand7 from '../assets/img/brand/brand7.svg';
+import {
+  Brand1,
+  Brand2,
+  Brand3,
+  Brand4,
+  Brand5,
+  Brand6,
+  Brand7,
+} from '../assets/img/brand/index';
 //logo
 import FooterLogo from '../assets/img/footerLogo.svg';
 
