@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pet-blogs/static/css/main.058a35c3.css",
-    "main.js": "/pet-blogs/static/js/main.526bf32c.js",
+    "main.js": "/pet-blogs/static/js/main.8c47adb2.js",
     "static/js/787.ecc344a7.chunk.js": "/pet-blogs/static/js/787.ecc344a7.chunk.js",
     "static/media/Banner01Mobile.svg": "/pet-blogs/static/media/Banner01Mobile.7cc96abdaabad5b250f3f83b38f974fa.svg",
     "static/media/Banner.svg": "/pet-blogs/static/media/Banner.355bd07f4ba309f6d192f8a331fcb731.svg",
@@ -46,11 +46,11 @@
     "static/media/Rectangle 2.svg": "/pet-blogs/static/media/Rectangle 2.bac9bf5a7c0e9a22d5d4d91d9afec9c9.svg",
     "static/media/Caret_Down_SM.svg": "/pet-blogs/static/media/Caret_Down_SM.418e4256dd00eb990771114729c0f3c4.svg",
     "main.058a35c3.css.map": "/pet-blogs/static/css/main.058a35c3.css.map",
-    "main.526bf32c.js.map": "/pet-blogs/static/js/main.526bf32c.js.map",
+    "main.8c47adb2.js.map": "/pet-blogs/static/js/main.8c47adb2.js.map",
     "787.ecc344a7.chunk.js.map": "/pet-blogs/static/js/787.ecc344a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.058a35c3.css",
-    "static/js/main.526bf32c.js"
+    "static/js/main.8c47adb2.js"
   ]
 }
