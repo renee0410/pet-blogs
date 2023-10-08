@@ -29,12 +29,12 @@ export function Header() {
       <div className="container">
         <div className="headerArea">
           <div className="menuIcon">
-            <img src={Hamburger} alt="" />
+            <img src={Hamburger} alt="" loading="lazy"/>
           </div>
           <div className="header-l">
             {/* logo */}
             <div className="logo">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="" loading="lazy"/>
             </div>
             {/* 導覽列 */}
             <nav className='navBar'>
@@ -59,16 +59,16 @@ export function Header() {
             {/* 語言下拉選單 */}
             <div className="languageSelection">
               <div className="countyIcon">
-                <img src={Country} alt="" />
+                <img src={Country} alt="" loading="lazy"/>
               </div>
               <p>VND</p>
               <div className="arrowIcon">
-                <img src={ArrowDown} alt="" />
+                <img src={ArrowDown} alt="" loading="lazy"/>
               </div>
             </div>
           </div>
           <div className="searchIcon">
-            <img src={Search} alt="" />
+            <img src={Search} alt="" loading="lazy"/>
           </div>
         </div>
       </div>

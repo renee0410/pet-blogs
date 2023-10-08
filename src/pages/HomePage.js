@@ -55,32 +55,32 @@ export function HomePage() {
         <div className="hero">
           {/* 背景 */}
           <div className="backgroundImg">
-            <img src={Human} className="imgStyle" alt="" />
+            <img src={Human} className="imgStyle" alt="" loading="lazy"/>
           </div>
           {/* rectangle背景 */}
           <div className="img1">
-            <img src={Rectangle1} className="imgStyle" alt="" />
+            <img src={Rectangle1} className="imgStyle" alt="" loading="lazy"/>
           </div>
           <div className="img2">
-            <img src={Rectangle2} className="imgStyle" alt="" />
+            <img src={Rectangle2} className="imgStyle" alt="" loading="lazy"/>
           </div>
           <div className="img3">
-            <img src={Rectangle3} alt="" />
+            <img src={Rectangle3} alt="" loading="lazy"/>
           </div>
           <div className="img5">
-            <img src={Rectangle5} alt="" />
+            <img src={Rectangle5} alt="" loading="lazy"/>
           </div>
           <div className="img6">
-            <img src={Rectangle6} alt="" />
+            <img src={Rectangle6} alt="" loading="lazy"/>
           </div>
           <div className="img7">
-            <img src={Rectangle7} alt="" />
+            <img src={Rectangle7} alt="" loading="lazy"/>
           </div>
           <div className="img8">
-            <img src={Rectangle8} alt="" />
+            <img src={Rectangle8} alt="" loading="lazy"/>
           </div>
           <div className="img9">
-            <img src={Rectangle9} alt="" />
+            <img src={Rectangle9} alt="" loading="lazy"/>
           </div>
           <div className="container">
             <h1>One more friend</h1>
@@ -131,8 +131,8 @@ export function HomePage() {
           {/* banner */}
           <div className="bannerArea01">
             <div className="banner">
-              <img src={Banner01} className="banner01" alt="" />
-              <img src={Banner01Mobile} className="banner01Mobile" alt="" />
+              <img src={Banner01} className="banner01" alt="" loading="lazy"/>
+              <img src={Banner01Mobile} className="banner01Mobile" alt="" loading="lazy"/>
             </div>
             <div className=" banner01 row r-block">
               <div className="col-lg-5 col-md-12 mr">
@@ -197,19 +197,19 @@ export function HomePage() {
                 </div>
             </div>
             <div className="brandsImg">
-              <img src={Brand1} alt="" />
-              <img src={Brand2} alt="" />
-              <img src={Brand3} alt="" />
-              <img src={Brand4} alt="" />
-              <img src={Brand5} alt="" />
-              <img src={Brand6} alt="" />
-              <img src={Brand7} alt="" />
+              <img src={Brand1} alt="" loading="lazy"/>
+              <img src={Brand2} alt="" loading="lazy"/>
+              <img src={Brand3} alt="" loading="lazy"/>
+              <img src={Brand4} alt="" loading="lazy"/>
+              <img src={Brand5} alt="" loading="lazy"/>
+              <img src={Brand6} alt="" loading="lazy"/>
+              <img src={Brand7} alt="" loading="lazy"/>
             </div>
           </div>
           {/* banner */}
           <div className="bannerArea02">
             <div className="banner">
-              <img src={Banner02} alt="" />
+              <img src={Banner02} alt="" loading="lazy"/>
             </div>
             <div className=" banner02 row l-block">
               <div className="col-lg-5 col-md-12 mr">
@@ -288,10 +288,10 @@ export function HomePage() {
                 <a href="#">Contact</a>
               </div>
               <div className="footerIcon">
-                <img src={Facebook} alt="" />
-                <img src={Twitter} alt="" />
-                <img src={Instagram} alt="" />
-                <img src={Youtube} alt="" />
+                <img src={Facebook} alt="" loading="lazy"/>
+                <img src={Twitter} alt="" loading="lazy"/>
+                <img src={Instagram} alt="" loading="lazy"/>
+                <img src={Youtube} alt="" loading="lazy"/>
               </div>
             </div>
             <div className="footerCopyright">
@@ -299,7 +299,7 @@ export function HomePage() {
                 <span>© 2022 Monito. All rights reserved.</span>
               </div>
               <div className="footerLogo">
-                <img src={FooterLogo} alt="" />
+                <img src={FooterLogo} alt="" loading="lazy"/>
               </div>
               <div className="policyInfo">
                 <span>Terms of Service</span>
