@@ -42,7 +42,7 @@ import {
   Brand7,
 } from '../assets/img/brand/index';
 //logo
-import FooterLogo from '../assets/img/footerLogo.svg';
+import { FooterLogo } from '../assets/img/logo/index';
 
 export function HomePage() {
   return (

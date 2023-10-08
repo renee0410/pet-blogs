@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { SearchBar } from './SearchBar';
 import { Button } from './Button';
 // logo
-import Logo from '../assets/img/Logo.svg';
+import { Logo } from '../assets/img/logo/index';
 // icon
 import {
   Country,
